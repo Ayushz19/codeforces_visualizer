@@ -7,13 +7,11 @@ function Display({ data }) {
       <div className={styles.image}>
         <img src={data.titlePhoto} className={styles.dp} />
       </div>
-      <div className={styles.first}>
-        {/* <span>First Name</span> */}
-        {data.firstName}
-      </div>
+      <div className={styles.first}>{ data.firstName}</div>
       <div className={styles.first}>{data.lastName}</div>
       <div className={styles.country}>{data.country}</div>
       <div className={styles.rating}>{data.rating}</div>
+      <div className={styles.maxrating}>{data.maxRating}</div>
     </div>
   );
 }

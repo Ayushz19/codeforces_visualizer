@@ -30,7 +30,9 @@ return(
     <div className={styles.container}>
 <form id="myform" autoComplete='off' onSubmit={onSubmitHandler}>
     <input className={styles.in} type={userName} id="w" onChange={onChangeHandler} />
+    <div className={styles.button}>
     <button className={styles.search}>Search</button> 
+    </div>
 </form>
 
     </div>
