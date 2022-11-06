@@ -20,7 +20,7 @@ const onSubmitHandler = (e)=>{
         return response.json();
     }).then((originalData)=>{
         if(originalData){
-            setData(originalData);
+            setData(originalData.result[0]);
         }
     })
 }
