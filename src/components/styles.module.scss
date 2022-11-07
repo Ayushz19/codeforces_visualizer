@@ -13,6 +13,8 @@ form {
   border: 2px;
   border-radius: 4px;
   opacity: 0.8;
+  color: #ffdeda;
+ 
 }
 button {
   align-items: center;
@@ -20,7 +22,7 @@ button {
   border: 2px solid #111;
   border-radius: 8px;
   box-sizing: border-box;
-  color: #111;
+  color: rgb(97, 69, 69);
   cursor: pointer;
   display: flex;
   font-family: Inter, sans-serif;
@@ -44,7 +46,7 @@ Button:hover:after {
 }
 
 Button:active {
-  background-color: #ffdeda;
+  background-color: #7c5955;
   outline: 0;
 }
 
@@ -57,4 +59,9 @@ Button:hover {
     text-align: center;
     display: flex;
     padding-top: 12px;
+}
+.placeholder{
+    // font-weight: 12px;
+    color: #ffdeda;
+    opacity: 1;
 }

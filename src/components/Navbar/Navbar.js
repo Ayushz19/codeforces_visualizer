@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import image from "./cf.webp";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.middle}>
         <div className={styles.img}>
-            <img className={styles.logo} src={image} />
+          <img className={styles.logo} src={image} />
         </div>
         <div className={styles.cf}>
           <ul>
@@ -17,7 +18,11 @@ const Navbar = () => {
           </ul>
         </div>
         <div className={styles.compare}>
-          <ul>Compare</ul>
+          <ul>
+            <Link className={styles.button} to="/compare">
+              Compare
+            </Link>
+          </ul>
         </div>
       </div>
     </div>
