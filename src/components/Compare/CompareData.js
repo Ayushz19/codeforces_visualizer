@@ -5,6 +5,7 @@ import style2 from './style2.module.scss'
 
 
 
+
 function CompareData() {
   const [userName, setUserName] = useState("");
   const [data, setData] = useState([]);
@@ -51,6 +52,7 @@ function CompareData() {
             />
           </div>
         </form>
+       
       </div>
       <Compare data={data} />
     </>

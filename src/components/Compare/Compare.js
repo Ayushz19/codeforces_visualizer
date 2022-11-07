@@ -1,5 +1,16 @@
 import React from "react";
 import styles from "./styles.module.scss";
+import {
+  BarChart,
+  Bar,
+  Cell,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 
 function Compare({ data }) {
   return (
@@ -67,6 +78,16 @@ function Compare({ data }) {
             </div>
           </div>
         </div>
+        <BarChart width={500} height={400} data={data}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis yAxisId="left" orientation="left" stroke="#8884d8" />
+          <YAxis yAxisId="right" orientation="right" stroke="#82ca9d" />
+          <Tooltip />
+          <Legend />
+          <Bar yAxisId="left" dataKey="rating" fill="#8884d8" />
+          <Bar yAxisId="right" dataKey="maxRating" fill="#82ca9d" />
+        </BarChart>
       </div>
     )
   );
