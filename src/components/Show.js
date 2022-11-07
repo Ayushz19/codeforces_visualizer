@@ -8,7 +8,7 @@ import Display from '../components/Display/Display'
 function Show()
 {
     const [userName,setUserName]=useState("");
-    const[data,setData] = useState({});
+    const[data,setData] = useState(null);
 
 const onChangeHandler =(e)=>{
     setUserName(e.target.value)

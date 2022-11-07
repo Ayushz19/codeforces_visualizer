@@ -3,7 +3,8 @@ import './App.css';
 import Show from "../src/components/Show"
 import Navbar from "../src/components/Navbar/Navbar"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Compare from "../src/components/Compare/Compare"
+
+import CompareData from './components/Compare/CompareData';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <div className="app">
           <Routes>
             <Route path='/' element={<Show />} />
-            <Route path='/' element={<Compare />} />
+            <Route path='/compare' element={<CompareData />} />
             
           </Routes>
         </div>

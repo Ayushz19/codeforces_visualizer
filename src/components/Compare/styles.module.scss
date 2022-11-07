@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 12px;
+}
+.dp {
+  height: 28vh;
+  border-radius: 50%;
+}
+.data {
+  position: relative;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.15em #1da9cc;
+  user-select: none;
+  white-space: nowrap;
+  filter: blur(0.007em);
+  animation: shake 2.5s linear forwards;
+}
+.compare{
+    display: flex;
+    margin: 12px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
