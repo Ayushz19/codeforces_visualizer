@@ -9,17 +9,13 @@ import style2 from './style2.module.scss'
 function CompareData() {
   const [userName, setUserName] = useState("");
   const [data, setData] = useState([]);
-  const [userName2, setUserName2]=useState("")
 
   const onChangeHandler = (e) => {
     setUserName(e.target.value);
   };
-  const onChangeHandler2 =(e)=>{
-    setUserName2(e.target.value)
-  }
   const onSubmitHandler = (e) => {
     e.preventDefault();
-    fetch(`https://codeforces.com/api/user.info?handles=${userName};${userName2}`)
+    fetch(`https://codeforces.com/api/user.info?handles=${userName}`)
       .then((response) => {
         return response.json();
       })
@@ -42,14 +38,6 @@ function CompareData() {
           />
           <div className={style2.button}>
             <button className={style2.search}>Search</button>
-          </div>
-          <div className={style2.input2}>
-            <input
-              className={style2.in}
-              type={userName2}
-              placeholder="type username"
-              onChange={onChangeHandler2}
-            />
           </div>
         </form>
        

@@ -1,8 +1,4 @@
 .container {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
   margin: 12px;
 }
 .dp {
@@ -29,5 +25,6 @@
     justify-content: center;
     text-align: center;
     align-items: center;
+    flex-direction: column;
     
 }
