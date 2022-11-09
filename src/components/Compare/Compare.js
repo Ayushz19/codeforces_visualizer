@@ -49,7 +49,7 @@ function Compare({ data }) {
                   <span>{elem.rank}</span>
                 </div>
                 {/* {Object.keys(elem).map((prop, _in) => (
-                  <div className={styles.first}>
+                  <div  className={styles.first}>
                     <span>{prop}: </span>
                     <span>{elem[prop]}</span>
                   </div>

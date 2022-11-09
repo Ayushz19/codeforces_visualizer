@@ -1,3 +1,4 @@
+import { async } from 'q';
 import React,{useState} from 'react';
 import Compare from './Compare';
 import style2 from './style2.module.scss'
@@ -13,6 +14,7 @@ function CompareData() {
   const onChangeHandler = (e) => {
     setUserName(e.target.value);
   };
+  
   const onSubmitHandler = (e) => {
     e.preventDefault();
     fetch(`https://codeforces.com/api/user.info?handles=${userName}`)

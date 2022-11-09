@@ -13,8 +13,8 @@ function App() {
         <Navbar />
         <div className="app">
           <Routes>
-            <Route path='/' element={<Show />} />
-            <Route path='/compare' element={<CompareData />} />
+            <Route exact path='/' element={<Show />} />
+            <Route exact path='/compare' element={<CompareData />} />
             
           </Routes>
         </div>
